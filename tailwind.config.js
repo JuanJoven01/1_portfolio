@@ -18,6 +18,7 @@ export default {
       backgroundImage: {
         'radial-gradient': 'radial-gradient(var(--tw-gradient-stops))',
       },
+
       fontFamily: {
         'merri': ['Merriweather Sans', 'sans-serif'],
         'satoshi-regular': ['Satoshi-Regular', 'sans-serif'],
@@ -30,6 +31,9 @@ export default {
         'satoshi-mediumitalic': ['Satoshi-MediumItalic', 'sans-serif'],
         'satoshi-blackitalic': ['Satoshi-BlackItalic', 'sans-serif'],
         'satoshi-lightitalic': ['Satoshi-LightItalic', 'sans-serif']
+      },
+      animation: {
+        'spin-slow': 'spin 5s linear infinite',
       },
     },
   },
