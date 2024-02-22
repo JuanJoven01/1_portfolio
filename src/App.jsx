@@ -11,27 +11,26 @@ const AppRoutes = () => {
       [
         {path: '/', element: <Portfolio/>},
         {path: '/blog', element: <Blog/>},
-
       ]
   )
-
   return routes
 }
 
 
 function App() {
-
-
   return (
-    <div className='total flex w-full justify-center'>
-      <div className='semi_total w-full max-w-6xl '>
+    <>
         <BrowserRouter>
           <Navbar/>
-          <AppRoutes/>
+          <div className='total flex bg-slate-900'>
+            <div className='semi-total w-full max-w-6xl mx-auto'>
+              <AppRoutes/>
+            </div>
+          </div>
           <Footer/>          
         </BrowserRouter>
-      </div>
-    </div>
+
+    </>
   )
 }
 

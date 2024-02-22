@@ -6,12 +6,12 @@ import Technologies from '../../components/technologies'
 const Portfolio = () => {
 
     return (
-        <>
+        <div className=' backdrop-blur-3xl'>
             <Header/>
             <Resume/>
             <Projects/>
             <Technologies/>
-        </>
+        </div>
 
     )
 }
