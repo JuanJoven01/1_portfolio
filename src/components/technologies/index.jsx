@@ -82,8 +82,8 @@ const Technologies  = () => {
         {
             'title': 'SQLAlchemy',
             'logo': <img src="../../../public/img/sqlalchemy.png" className=" h-10 w-16 mt-4" />,
-            'shadow': 'drop-shadow-[0px_0px_10px_rgba(230,230,230,0.7)]',
-            'shadow_hover':  'hover:drop-shadow-[0px_0px_13px_rgba(230,230,230,0.9)]',
+            'shadow': 'drop-shadow-[0px_0px_10px_rgba(0,50,235,0.7)]',
+            'shadow_hover':  'hover:drop-shadow-[0px_0px_13px_rgba(0,10,235,0.9)]',
         },
         {
             'title': 'PostgreSQL',
@@ -112,11 +112,11 @@ const Technologies  = () => {
     ]
 
     return (
-        <section>
+        <section className="">
              <h1 className="text-center p-5 text-5xl font-bold text-slate-300" >
               Technologies
             </h1>
-            <div className=" bg-slate-800 mx-20 mb-20 mt-10 border-slate-300 border-2 flex flex-wrap justify-center">
+            <div className="  mx-20 mb-20 mt-10  flex flex-wrap justify-center">
                 {
                     technologies.map((item,index)=>(
                         <div key={index} className={`group m-5 rounded-xl ${item.shadow} ${item.shadow_hover} flex justify-center items-center`}>
