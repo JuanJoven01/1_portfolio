@@ -18,34 +18,6 @@ const Projects = () => {
             'link_1': '/blog',
             'link_2': 'https://github.com/JuanJoven01/portfolio'
         },
-        {
-            'title': 'Blog',
-            'description': 'This is a personal blog created with React and Tailwind, a couple of times a week I add posts about news, components or tools that I find interesting.',
-            'image': '../../../public/img/reactTailwind.png',
-            'link_1': '/blog',
-            'link_2': 'https://github.com/JuanJoven01/portfolio'
-        },
-        {
-            'title': 'Blog',
-            'description': 'This is a personal blog created with React and Tailwind, a couple of times a week I add posts about news, components or tools that I find interesting.',
-            'image': '../../../public/img/reactTailwind.png',
-            'link_1': '/blog',
-            'link_2': 'https://github.com/JuanJoven01/portfolio'
-        },
-        {
-            'title': 'Blog',
-            'description': 'This is a personal blog created with React and Tailwind, a couple of times a week I add posts about news, components or tools that I find interesting.',
-            'image': '../../../public/img/reactTailwind.png',
-            'link_1': '/blog',
-            'link_2': 'https://github.com/JuanJoven01/portfolio'
-        },
-        {
-            'title': 'Blog',
-            'description': 'This is a personal blog created with React and Tailwind, a couple of times a week I add posts about news, components or tools that I find interesting.',
-            'image': '../../../public/img/reactTailwind.png',
-            'link_1': '/blog',
-            'link_2': 'https://github.com/JuanJoven01/portfolio'
-        }
     ]
 
     const verifyIfBlog = (text) => {
