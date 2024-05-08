@@ -1,19 +1,13 @@
-import { useNavigate} from "react-router-dom"
-import { allContext } from "../../context/index.jsx"
-import { useContext } from "react"
 
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 const Projects = () => {
 
-    const globalContext = useContext(allContext)
-
-    const navigate = useNavigate()
 
     const projects = [
         {
-            'title': 'Blog',
-            'description': 'This is a personal blog created with React and Tailwind, a couple of times a week I add posts about news, components or tools that I find interesting.',
+            'title': 'Portfolio',
+            'description': 'This is the first project with React and Tailwind, to demonstrate my skills through different projects.',
             'image': '/img/reactTailwind.png',
             'link_1': '/blog',
             'link_2': 'https://github.com/JuanJoven01/portfolio'
@@ -23,15 +17,17 @@ const Projects = () => {
     const verifyIfBlog = (text) => {
         if (text == '/blog'){
             return(
-                <p className='mr-2 text-sm'  onClick={() => navigate('/blog') & globalContext.setInPortfolio(false) & globalContext.setInBlog(true)}>
-                    View online
-                </p>
+                true
             )
         } else {
             return (
-                <a className='text-sm mr-2'  href={text} target="_blank" rel="noopener noreferrer">
+                <div className="flex p-2 mx-1 hover:cursor-pointer hover:text-teal-200">
+                    <a className='text-sm mr-2'  href={text} target="_blank" rel="noopener noreferrer">
                     View online
-                </a>
+                    </a>
+                    <FaExternalLinkAlt />
+                </div>
+                
             )
         }
     }
@@ -55,11 +51,8 @@ const Projects = () => {
                                 <p className=" text-center p-3 text-slate-300 font-satoshi-italic text-lg">{item['description']}</p>
                                 <img src={item['image']} alt="" className=""/>
                                 
-                                <div className=" flex justify-center text-slate-300 ">
-                                    <div className="flex p-2 mx-1 hover:cursor-pointer hover:text-teal-200">
-                                        {verifyIfBlog(item.link_1)}
-                                        <FaExternalLinkAlt />
-                                    </div>
+                                <div className=" flex justify-center text-slate-300 ">                  
+                                    {verifyIfBlog(item.link_1)}
                                     <div className='flex p-2 mx-1 hover:cursor-pointer  hover:text-teal-200' >
                                         <a className='text-sm mr-2'  href={item.link_2} target="_blank" rel="noopener noreferrer">
                                             View code

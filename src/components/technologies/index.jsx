@@ -86,6 +86,12 @@ const Technologies  = () => {
             'shadow_hover':  'hover:drop-shadow-[0px_0px_13px_rgba(0,10,235,0.9)]',
         },
         {
+            'title': 'Golang',
+            'logo': <img src="/img/jp.png" className=" h-16 w-16" />,
+            'shadow': 'drop-shadow-[0px_0px_10px_rgba(0,230,255,0.7)]',
+            'shadow_hover':  'hover:drop-shadow-[0px_0px_13px_rgba(0,230,255,0.9)]',
+        },
+        {
             'title': 'PostgreSQL',
             'logo': <img src="/img/sql.png" className=" h-16 w-16" />,
             'shadow': 'drop-shadow-[0px_0px_10px_rgba(36,120,255,0.7)]',
